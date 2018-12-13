@@ -65,12 +65,12 @@ li a{
 
 .principal_message{
   width: 670px;
-  margin: 40px;
+  /* margin: 40px; */
   padding: 15px;
   border: 1px solid black;
   border-radius: 15px;
   background-color: white;
-  /* margin: 25px; */
+  margin: 25px auto;
   /* background-color: #EAEAEA; */
 }
 
@@ -78,13 +78,13 @@ li a{
   /* width: 650px;
   margin-left: 40px; */
   width: 650px;
-  margin-left: 40px;
-  margin: 40px;
+  /* margin-left: 40px; */
+  /* margin: 40px; */
   padding: 2px;
   border-radius: 15px;
   border: 1px solid black;
   background-color: white;
-  /* margin: 25px; */
+  margin: 25px auto;
   /* background-color: #548191; */
   /* background-image: url("images/img_amd_7.png");
   background-size: 570px 280px;
@@ -111,16 +111,6 @@ li a{
   border-radius: 15px;
 }
 
-.mision{
-  border: 1px solid gray;
-  border-radius: 15px;
-  margin:
-}
-
-.vision{
-  border: 1px solid gray;
-  border-radius: 15px;
-}
 
 .galeria_size{
   width: 250px;
@@ -173,5 +163,35 @@ li a{
 }
 
 .s_mision_y_vision{
-  margin: 40px 10px;
+  background-color: #EAEAEA;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mision{
+  border: 1px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  margin: 50px auto;
+  flex-shrink: 0;
+  background-color: white;
+}
+
+.vision{
+  border: 1px solid gray;
+  border-radius: 15px;
+  text-align: center;
+  margin: 50px auto;
+  flex-shrink: 0;
+  background-color: white;
+}
+
+.mision_description, .vision_description{
+  margin: 0px 20px 15px;
+  font-size: 30px;
+}
+
+.mision_title, .vision_title{
+  font-size: 50px;
+  margin: 25px 0px;
 }
