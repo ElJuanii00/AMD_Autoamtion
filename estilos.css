@@ -14,8 +14,64 @@ h1{
   /* text-transform: uppercase; */
   /* text-decoration: dashed; */
 }
+h1 strong{
+  color: #3D9EB7;
+}
+#CapacidadyGaleria{
+  display: flex;
+}
+.s_principal{
+  display: flex;
+  background-color: #EAEAEA;
+}
+.principal_message{
+  width: 751px;
+  /* background-color: #EAEAEA; */
+}
+.principal_welcome{
+  width: 751px;
+  /* background-color: #548191; */
+  background-image: url("images/img_amd_7.png");
+  background-size: 480px 240px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 50px;
+}
+
+.principal_welcome_welcome{
+  text-align: center;
+}
+
+.mision{
+  border: 1px solid gray;
+  border-radius: 15px;
+  margin: 
+}
+
+.vision{
+  border: 1px solid gray;
+  border-radius: 15px;
+}
 
 .galeria_size{
   width: 250px;
   height: 70;
+}
+
+.capacidad{
+  width: 600px;
+}
+
+.galeria{
+  width: 600px;
+}
+
+.header{
+  background-color: #071523;
+  color: white;
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
 }
