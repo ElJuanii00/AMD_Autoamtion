@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 h1{
-  font-size: 40px;
+  font-size: 35px;
   line-height: 1.5px;
   letter-spacing: -.2px;
   /* text-transform: uppercase; */
@@ -22,8 +22,23 @@ h1 strong{
 li a{
   font-size: 45px;
 }
-#CapacidadyGaleria, .menu_link, .header_logo_menu, .s_mision_y_vision {
+
+.header{
+  background-color: #071523;
+  color: white;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; */
+}
+
+.header a{
+  color: white;
+  text-decoration: none;
 }
 
 .menu_link{
@@ -31,26 +46,34 @@ li a{
 }
 
 .logo{
-  margin: 10px 10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
 }
 
 .menu{
-  margin-left: 0px;
+  margin: auto;
 }
 .menu_link{
-  padding-left: 0px;
-  flex-wrap: wrap;
-  padding-left: 0px;
-  flex-wrap: wrap;
-  margin: 19px 0px;
+  margin: auto;
   border-left: 5px solid white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  /* flex-wrap: wrap; */
+  /* padding-left: 0px; */
+  /* flex-wrap: wrap; */
 }
 
 .link{
-  flex-shrink: 0;
-  margin-left: 20px;
-  padding: 5px;
-  margin-top: center;
+  margin: 0px 27px;
+  /* flex-shrink: 0; */
+  /* padding: 5px; */
+  /* margin-left: 20px; */
+  /* margin-top: center; */
 }
 
 .s_principal{
@@ -58,59 +81,20 @@ li a{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0px;
+  flex-direction: row;
   background-color: #EAEAEA;
 }
 
 .principal_message{
-  width: 670px;
-  height: 380px;
+  border: 1px solid black;
+  border-radius: 15px;
+  background-color: white;
+  /* width: 670px;
+  height: 380px; */
   /* margin: 40px; */
   /* padding: 15px; */
-  border: 1px solid black;
-  border-radius: 15px;
-  background-color: white;
   /* margin: 25px auto; */
   /* background-color: #EAEAEA; */
-}
-
-.principal_welcome{
-  /* width: 650px;
-  margin-left: 40px; */
-  width: 670px;
-  height: 380px;
-  /* margin-left: 40px; */
-  /* margin: 40px; */
-  /* padding: 2px; */
-  border-radius: 15px;
-  border: 1px solid black;
-  background-color: white;
-  /* margin: 25px auto; */
-  /* background-color: #548191; */
-  /* background-image: url("images/img_amd_7.png");
-  background-size: 570px 280px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position-y: 120px; */
-}
-
-.principal_welcome_welcome{
-  margin: 16px 0px 16px 0px;
-  text-align: center;
-  font-size: 50px;
-}
-
-.principal_welcome_fig{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.principal_welcome_img{
-  width: 600px;
-  height: 260px;
-  border: 1px solid white;
-  border-radius: 15px;
 }
 
 .principal_message_div{
@@ -118,6 +102,7 @@ li a{
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 670px;
   height: 380px;
 }
@@ -128,41 +113,92 @@ li a{
   text-align: center;
 }
 
+.principal_welcome{
+  border-radius: 15px;
+  border: 1px solid black;
+  background-color: white;
+  /* width: 650px;
+  margin-left: 40px; */
+  /* width: 670px;
+  height: 380px; */
+  /* margin-left: 40px; */
+  /* margin: 40px; */
+  /* padding: 2px; */
+  /* margin: 25px auto; */
+  /* background-color: #548191; */
+  /* background-image: url("images/img_amd_7.png");
+  background-size: 570px 280px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-y: 120px; */
+}
+
+.principal_welcome_div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 670px;
+  height: 380px;
+}
+
+.principal_welcome_welcome{
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+}
+
+.principal_welcome_img{
+  width: 600px;
+  height: 260px;
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+
 
 .principal_message, .principal_welcome{
   flex-shrink: 0;
+  margin: 100px 0px;
 }
 
-.header{
-  background-color: #071523;
-  color: white;
-}
-
-.header a{
-  color: white;
-  text-decoration: none;
-}
 
 .s_servicios{
   background-color: #071523;
   color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
+
+.s_servicios_div{
+  margin: 100px 0px;
+}
+
 .s_servicios_title{
   margin: 0 auto;
-  padding: 50px 0px 0px;
   text-align: center;
   font-size: 100px;
+  /* padding: 50px 0px 0px; */
 }
 
 .servicios{
   text-align: center;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; */
 }
 
 .servicios_unordered_list{
   margin-bottom: 0px;
   padding: 0px;
-  padding-bottom: 50px;
   list-style-position: inside;
+  /* padding-bottom: 50px; */
 }
 
 .servicios_description{
@@ -176,7 +212,7 @@ li a{
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 0px;
+  /* padding: 50px 0px; */
 }
 
 .mision{
@@ -185,9 +221,9 @@ li a{
   border: 1px solid gray;
   border-radius: 15px;
   text-align: center;
-  /* margin: 50px auto; */
   flex-shrink: 0;
   background-color: white;
+  /* margin: 50px auto; */
 }
 
 .vision{
@@ -196,9 +232,13 @@ li a{
   border: 1px solid gray;
   border-radius: 15px;
   text-align: center;
-  /* margin: 50px auto; */
   flex-shrink: 0;
   background-color: white;
+  /* margin: 50px auto; */
+}
+
+.mision, .vision{
+  margin: 100px 0px;
 }
 
 .mision_y_vision_div{
@@ -224,30 +264,35 @@ li a{
   justify-content: space-around;
   align-items: center;
   background-color: #071523;
-  padding: 50px 0px;
+  /* padding: 50px 0px; */
 }
 
 .capacidad{
   width: 600px;
   height: 850px;
   flex-shrink: 0;
-  /* margin: 50px auto; */
   border: 1px solid black;
   text-align: center;
   background-color: white;
   border-radius: 15px;
+  /* margin: 50px auto; */
 }
 
 .galeria{
   width: 600px;
   height: 850px;
   flex-shrink: 0;
-  /* margin: 50px auto; */
   border: 1px solid black;
   text-align: center;
   background-color: white;
   border-radius: 15px;
+  /* margin: 50px auto; */
 }
+
+.capacidad, .galeria{
+  margin: 100px 0px;
+}
+
 .capacidad_y_galeria_div{
   display: flex;
   flex-wrap: wrap;
@@ -286,4 +331,54 @@ li a{
 .galeria_size{
   width: 250px;
   height: 70;
+}
+
+.s_contacto{
+  background-color: #EAEAEA;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.s_contacto_title{
+  font-size: 100px;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.s_contacto_cities, .s_contacto_form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.elpaso, .cdjuarez{
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 660px;
+  height: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s_contacto_message{
+  text-align: center;
+  font-size: 40px;
+  margin: 0px 25px;
+}
+
+.form_email{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
