@@ -221,13 +221,17 @@ li a{
 .s_capacidadygaleria{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
   background-color: #071523;
+  padding: 50px 0px;
 }
 
 .capacidad{
   width: 600px;
+  height: 850px;
   flex-shrink: 0;
-  margin: 50px auto;
+  /* margin: 50px auto; */
   border: 1px solid black;
   text-align: center;
   background-color: white;
@@ -236,17 +240,30 @@ li a{
 
 .galeria{
   width: 600px;
+  height: 850px;
   flex-shrink: 0;
-  margin: 50px auto;
+  /* margin: 50px auto; */
   border: 1px solid black;
   text-align: center;
   background-color: white;
   border-radius: 15px;
 }
+.capacidad_y_galeria_div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 
 .capacidad_unordered_list{
-  list-style-position: inside;
-  margin-top: auto;
+  list-style-position: outside;
+  margin: 40px 40px 0px;
+  /* margin-top: auto; */
+}
+
+.capacidad_description{
+  line-height: 40px;
 }
 
 .capacidad_title, .galeria_title{
@@ -256,6 +273,7 @@ li a{
 }
 
 .capacidad_info{
+  margin: 0px;
   font-size: 40px;
   color: #3D9EB7;
 }
