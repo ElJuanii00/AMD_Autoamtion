@@ -9,15 +9,14 @@
   <body>
     <!-- Header -->
     <header class="header">
-     <div class="logo_div">
+      <div class="logo_div">
        <figure class="logo">
-          <img src="images/amd_logo_transparent.png" alt="www.amdautomationusa.com"
-          width="220" height="70">
+         <img src="images/amd_logo_transparent.png" alt="www.amdautomationusa.com" width="180">
        </figure>
-     </div>
-     <div class="menu_div">
-      <nav class="menu">
-        <ul class="menu_link">
+      </div>
+      <div class="menu_div">
+        <nav class="menu">
+         <ul class="menu_link">
           <li class="link">
             <a href="#Servicios">Servicios</a>
           </li>
@@ -33,9 +32,9 @@
           <li class="link">
             <a href="#Contactenos">Contactenos</a>
           </li>
-        </ul>
-     </nav>
-     </div>
+         </ul>
+        </nav>
+      </div>
     </header>
     <!-- Principal -->
    <section class="s_principal">
@@ -79,7 +78,7 @@
     <!-- Mision/Vision -->
     <section id="Mision_y_Vision" class="s_mision_y_vision">
       <article class="mision">
-        <h3 class="mision_title">Mision</h3>
+        <h2 class="mision_title">Mision</h2>
         <div class="mision_y_vision_div">
           <p class="mision_div_description">Fortalecer la comunicación <br> con nuestros clientes para comprender
             <br> mejor sus necesidades y poder ofrecerles <br> soluciones adecuadas
@@ -87,7 +86,7 @@
         </div>
       </article>
       <article class="vision">
-        <h3 class="vision_title">Vision</h3>
+        <h2 class="vision_title">Vision</h2>
         <div class="mision_y_vision_div">
           <p class="vision_div_description">Ser el proveedor preferido de nuestros <br> clientes a través de la
             excelencia de <br> nuestra automatización, integración, <br> diseño mecánico
@@ -131,31 +130,62 @@
       </article>
     </section>
     <!-- Contactenos -->
-    <section id="Contactenos" class="s_contacto">
-      <h2 class="s_contacto_title">Contacto</h2>
-      <div class="s_contacto_cities">
-        <article class="elpaso">
-         <p class="s_contacto_message">AMD AUTOMATION LLC <br> 1716 Montana Avenue <br> El Paso, Texas, USA.
-          79902 <br> (915)-258-1985</p>
-        </article>
-        <article class="cdjuarez">
-         <p class="s_contacto_message">AMD Automatización y Diseños Industriales S de RL de CV <br> Julian
-          Carrillo 4015 <br> Cd. Juárez, Chihuahua, MEX. 32330 <br>
-          info@amdautomatizacion.com, (656)-654-0056</p>
-        </article>
+    <section id="Contactenos" class="s_maps_contacto">
+      <h2 class="maps_title">Mapa</h2>
+      <div class="cities_maps">
+        <div class="cities">
+          <article class="cdjuarez">
+           <p class="cities_message">AMD Automatización y Diseños Industriales S de RL de CV <br> Julian
+            Carrillo 4015 <br> Cd. Juárez, Chihuahua, MEX. 32330 <br>
+            info@amdautomatizacion.com, (656)-654-0056</p>
+          </article>
+          <article class="elpaso">
+           <p class="cities_message">AMD AUTOMATION LLC <br> 1716 Montana Avenue <br> El Paso, Texas, USA.
+            79902 <br> (915)-258-1985</p>
+          </article>
+        </div>
+        <div class="maps">
+          <h3>Ciudad Juarez</h3>
+          <div id="map">
+          </div>
+        </div>
       </div>
-      <div class="s_contacto_form">
-        <form class="form_email">
-          <input type="text" name="Nombre" placeholder="Nombre" required>
-          <input type="email" name="Email" placeholder="Correo Electronico" required>
-          <input type="text" name="Mensaje" placeholder="Mensaje">
-          <input type="Submit" value="Enviar">
+      <div class="contacto">
+        <h2 class="contacto_title">Contacto</h2>
+        <form class="contacto_form">
+          <input type="text" name="Nombre" placeholder="Nombre" class="contacto_form_name" required>
+          <input type="email" name="Email" placeholder="Correo Electronico" class="contacto_form_email" required>
+          <!-- <input type="msg" name="Mensaje" placeholder="Mensaje" class="contacto_form_message"> -->
+          <textarea name="name" rows="8" cols="80" class="contacto_form_message" placeholder="Mensaje"></textarea>
+          <input type="Submit" value="Enviar" class="contacto_form_send">
         </form>
       </div>
     </section>
     <!-- footer -->
     <section class="footer">
-      footer
+      <div class="footer_div_1">
+        <p class="footer_msg_1">AMD AUTOMATIZACIÓN <img src="images/amd_logo_transparent.png" alt="amd_logo.png" width="100px"></p>
+      </div>
+      <div class="footer_div_2">
+        <p class="footer_msg_2">Designed by Juan Ponce</p>
+      </div>
+    <!-- Scripts -->
     </section>
+    <script>
+      function initMap() {
+        var location = {lat: 31.733360, lng: -106.449105};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          zoom: 18
+        });
+        var marker = new google.maps.Marker({
+          map: map,
+          position: location,
+          title: 'AMD AUTOMATIZACION'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOuAUZLacWG71Q6x873FHKgD0TRQhn-0U&callback=initMap"
+        async defer></script>
   </body>
 </html>

@@ -15,45 +15,78 @@ h1{
   /* text-transform: uppercase; */
   /* text-decoration: dashed; */
 }
+
+h2{
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
 h1 strong{
   color: #3D9EB7;
 }
 
 li a{
-  font-size: 45px;
+  font-size: 30px;
 }
 
 .header{
   background-color: #071523;
   color: white;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
   flex-direction: row;
+  height: 70px;
+  /* align-items: flex-start; */
   /* display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row; */
 }
 
+/* .container{
+  display: inherit;
+  vertical-align: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  flex-direction: inherit;
+  height: inherit;
+  width: 1200px;
+  margin: 0px auto;
+  flex-wrap: inherit;
+} */
+
 .header a{
   color: white;
   text-decoration: none;
 }
 
-.menu_link{
-  list-style: none;
+.logo_div{
+  height: inherit;
+  display: flex;
+  align-items: center;
 }
 
 .logo{
   margin: auto;
   display: flex;
   align-items: center;
+  height: inherit;
+}
+
+
+.menu_div{
+  height: inherit;
+  /* display: flex; */
+  /* align-items: center; */
 }
 
 .menu{
   margin: auto;
+  height: inherit;
 }
+
 .menu_link{
   margin: auto;
   border-left: 5px solid white;
@@ -63,6 +96,8 @@ li a{
   flex-direction: row;
   flex-wrap: wrap;
   padding-left: 0px;
+  list-style: none;
+  height: inherit;
   /* flex-wrap: wrap; */
   /* padding-left: 0px; */
   /* flex-wrap: wrap; */
@@ -70,10 +105,17 @@ li a{
 
 .link{
   margin: 0px 27px;
+  height: inherit;
   /* flex-shrink: 0; */
   /* padding: 5px; */
   /* margin-left: 20px; */
   /* margin-top: center; */
+}
+
+.link a{
+  height: inherit;
+  display: flex;
+  align-items: center;
 }
 
 .s_principal{
@@ -267,18 +309,12 @@ li a{
   /* padding: 50px 0px; */
 }
 
-.capacidad{
-  width: 600px;
-  height: 850px;
+.capacidad, .galeria{
   flex-shrink: 0;
-  border: 1px solid black;
-  text-align: center;
-  background-color: white;
-  border-radius: 15px;
   /* margin: 50px auto; */
 }
 
-.galeria{
+/* .galeria{
   width: 600px;
   height: 850px;
   flex-shrink: 0;
@@ -286,11 +322,11 @@ li a{
   text-align: center;
   background-color: white;
   border-radius: 15px;
-  /* margin: 50px auto; */
-}
+  margin: 50px auto;
+} */
 
 .capacidad, .galeria{
-  margin: 100px 0px;
+  padding: 100px 0px;
 }
 
 .capacidad_y_galeria_div{
@@ -299,6 +335,12 @@ li a{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  border: 1px solid black;
+  text-align: center;
+  background-color: white;
+  border-radius: 15px;
+  width: 600px;
+  height: 850px;
 }
 
 .capacidad_unordered_list{
@@ -333,7 +375,7 @@ li a{
   height: 70;
 }
 
-.s_contacto{
+.s_maps_contacto{
   background-color: #EAEAEA;
   display: flex;
   flex-wrap: wrap;
@@ -342,14 +384,38 @@ li a{
   flex-direction: column;
 }
 
-.s_contacto_title{
+.maps_title{
   font-size: 100px;
   margin: auto;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
-.s_contacto_cities, .s_contacto_form{
+.contacto_title{
+  font-size: 100px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.cities_maps{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.cities{
+  display: inherit;
+  flex-wrap: inherit;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.s_contacto_form{
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -361,24 +427,124 @@ li a{
   background-color: white;
   border: 1px solid black;
   border-radius: 15px;
-  width: 660px;
-  height: 380px;
+  width: 540px;
+  height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 100px;
 }
 
-.s_contacto_message{
+.cities_message{
   text-align: center;
-  font-size: 40px;
+  font-size: 25px;
   margin: 0px 25px;
 }
 
-.form_email{
+.contacto{
+  padding-bottom: 50px;
+  background-color: #071523;
+  color: white;
+}
+
+
+.contacto_form{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px;
+  /* margin-bottom: 100px; */
+  /* background-color: #EAEAEA; */
+  height: 300px;
+}
+
+.contacto_form_name, .contacto_form_email{
+  width: 200px;
+  height: 30px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.contacto_form_message{
+  width: 550px;
+  height: 120px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.contacto_form_send{
+  background: transparent;
+  width: 150px;
+  height: 47px;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid white;
+  font-size: 25px;
+}
+
+.maps{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 120px;
+}
 
+.maps h3{
+  margin: 15px;
+  font-size: 40px;
+  color: black;
+}
+
+#map{
+  width: 700px;
+  height: 400px;
+}
+
+.footer{
+   margin: 0px;
+ background-color: #071523;
+ color: white;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 0px 50px;
+ border-top: 7px double white;
+}
+
+.footer_div_1{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer_div_2{
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-direction: row;
+}
+
+.footer_msg_1, .footer_msg_2{
+  margin: 0px;
+}
+
+.footer_msg_1 img{
+  vertical-align: middle;
+}
+
+.footer_msg_2 a {
+  color: white;
+  text-align: right;
+}
+
+.principal_message, .principal_welcome, .mision, .vision, .capacidad_y_galeria_div,
+.elpaso, .cdjuarez, .contacto_form_name, .contacto_form_email, .contacto_form_message, #map{
+  box-shadow: 3px 5px 33px #888888;
 }
