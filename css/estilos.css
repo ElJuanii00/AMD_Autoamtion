@@ -35,6 +35,14 @@ h1, h2, h3 , h4, h5, h6{
   margin: 0 auto;
 }
 
+.profecional_services{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
                     /* header background */
 .header_background_img{
   background-image: url(../images/img_amd_6.jpg);
@@ -53,10 +61,27 @@ h1, h2, h3 , h4, h5, h6{
   height: 100%;
 }
 
+.background_img{
+  background-size: 100% auto;
+  background-position: center;
+  width: auto;
+  height: auto;
+  background-repeat: no-repeat;
+  /* display: inline-block; */
+}
+
+.opacity{
+  display: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  flex-direction: inherit;
+  flex-wrap: inherit;
+}
+
                     /* header */
 .header{
-  /* background-color: rgba(0, 0, 0, 0.5); */
   height: 8%;
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 .div_amd_logo{
   width: 220px;
@@ -143,15 +168,21 @@ h1, h2, h3 , h4, h5, h6{
 
                     /* mision and vision */
 .mision_and_vision{
-  background-color: #205A86;
+  background-image: url(../images/img_amd_1.jpg);
+}
+
+/* #205A86 */
+
+.opacity{
+  background-color: rgba(49, 141, 210, 0.9);
 }
 
 .mision, .vision{
  width: 48%;
- height: 320px;
  margin: 50px 0;
- /* background-color: white; */
  border-radius: 25px;
+ height: 320px;
+ /* background-color: white; */
  /* border: 1px solid white; */
 }
 
@@ -175,10 +206,12 @@ h1, h2, h3 , h4, h5, h6{
 
 .mision_title, .vision_title{
   color: white;
-  font-size: 3em;
+  font-size: 4em;
   margin: 0;
   text-align: center;
   width: 90%;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .mision_msg, .vision_msg{
@@ -186,4 +219,35 @@ h1, h2, h3 , h4, h5, h6{
   font-size: 2em;
   width: 90%;
   color: white;
+}
+
+                    /* profecional services */
+.profecional_services{
+  background-color: #EAEAEA;
+}
+
+.art_profecional_services{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.profecional_services_title{
+  margin: 50px 0 0;
+  font-size: 4em;
+  color: #318DD2;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.profecional_services_list{
+  margin: 50px 0;
+  padding: 0;
+}
+
+.profecional_services_list li{
+  font-size: 2em;
+  color: #070707;
 }
