@@ -8,11 +8,8 @@ h1, h2, h3 , h4, h5, h6{
   font-family: "Fjilla One", sans-serif;
   font-weight: normal;
 }
-
-                    /* background color */
-
                     /* Flex */
-.header, .nav_list{
+.header, .nav_list, .mision_and_vision{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +31,7 @@ h1, h2, h3 , h4, h5, h6{
   align-items: inherit;
   flex-direction: inherit;
   flex-wrap: inherit;
-  width: 85%;
+  width: 90%;
   margin: 0 auto;
 }
 
@@ -105,7 +102,7 @@ h1, h2, h3 , h4, h5, h6{
 .hero_msg{
   color: white;
   width: 100%;
-  font-size: 3.8em;
+  font-size: 3.5em;
   margin: 50px 0;
   text-align: center;
   text-transform: uppercase;
@@ -142,4 +139,51 @@ h1, h2, h3 , h4, h5, h6{
   border-radius: 50px;
   border: thick solid #103B60;
   /* height: auto; */
+}
+
+                    /* mision and vision */
+.mision_and_vision{
+  background-color: #205A86;
+}
+
+.mision, .vision{
+ width: 48%;
+ height: 320px;
+ margin: 50px 0;
+ /* background-color: white; */
+ border-radius: 25px;
+ /* border: 1px solid white; */
+}
+
+.mision{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-right: thick solid #EAEAEA;
+  border-left: thick solid #EAEAEA;
+}
+
+.vision{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  border-right: thick solid #EAEAEA;
+  border-left: thick solid #EAEAEA;
+}
+
+.mision_title, .vision_title{
+  color: white;
+  font-size: 3em;
+  margin: 0;
+  text-align: center;
+  width: 90%;
+}
+
+.mision_msg, .vision_msg{
+  color: #06121E;
+  font-size: 2em;
+  width: 90%;
+  color: white;
 }
