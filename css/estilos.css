@@ -37,10 +37,19 @@ h1, h2, h3 , h4, h5, h6{
 
 .profecional_services{
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  /* align-items: center; */
   flex-direction: row;
   flex-wrap: wrap;
+  position: relative;
+}
+
+.capacity{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  position: relative;
 }
 
                     /* header background */
@@ -221,33 +230,115 @@ h1, h2, h3 , h4, h5, h6{
   color: white;
 }
 
-                    /* profecional services */
-.profecional_services{
+                    /* profecional services and capacity */
+.profecional_services, .capacity{
   background-color: #EAEAEA;
 }
 
-.art_profecional_services{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+.profecional_services{
+  height: 666px;
 }
 
-.profecional_services_title{
+.capacity{
+  height: 596px;
+}
+
+.art_profecional_services, .art_capacity{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(208, 220, 225, 0.5);
+}
+
+.art_profecional_services{
+  left: 0px;
+}
+
+.art_capacity{
+  right: 0px;
+}
+
+.profecional_services_title, .capacity_title{
   margin: 50px 0 0;
   font-size: 4em;
   color: #318DD2;
   font-weight: bold;
   text-transform: uppercase;
+  border-bottom: thick solid #0F3658;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  white-space: normal;
 }
 
-.profecional_services_list{
+.profecional_services_title{
+  width: 60%;
+}
+
+.capacity_title{
+  width: 35%;
+}
+
+.profecional_services_list, .capacity_list{
   margin: 50px 0;
+  width: 100%;
   padding: 0;
+  /* padding: 0; */
+  /* text-align: center; */
 }
 
-.profecional_services_list li{
-  font-size: 2em;
-  color: #070707;
+.profecional_services_list li, .capacity_list li{
+  /* width: 100%; */
+  margin: 0 10%;
+  font-size: 1.8em;
+  color: #061623;
+  line-height: 150%;
 }
+
+.profecional_services_img{
+  background-image: url(../images/img_amd_8.jpg);
+  background-size: auto 100%;
+  /* background-position-y: 50px; */
+  background-position-x: -200px;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 0px;
+}
+
+.capacity_img{
+  background-image: url(../images/img_amd_7.png);
+  background-size: auto 100%;
+  background-position: left;
+  width: 50%;
+  height: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0px;
+}
+
+.opacity_profecional_services, .opacity_capacity{
+  background-color: rgba(6, 22, 35, 0.8);
+  width: 100%;
+  height: 100%;
+}
+
+.profecional_services_list, .capacity_list{
+  list-style: none;
+}
+
+.profecional_services_list li::before, .capacity_list li::before{
+  content: "\2022";
+  color: #66A4D1;
+  font-weight: bold;
+  font-size: larger;
+  margin-right: 8px;
+}
+
+                    /* capacity */
