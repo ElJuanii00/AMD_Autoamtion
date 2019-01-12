@@ -52,6 +52,14 @@ h1, h2, h3 , h4, h5, h6{
   position: relative;
 }
 
+.address{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
                     /* header background */
 .header_background_img{
   background-image: url(../images/img_amd_6.jpg);
@@ -341,4 +349,82 @@ h1, h2, h3 , h4, h5, h6{
   margin-right: 8px;
 }
 
-                    /* capacity */
+                    /* Map */
+
+.address{
+  background-image: url(../images/img_amd_9.jpg);
+}
+
+.address_title{
+  width: 10%;
+  text-align: center;
+  margin: 50px 0 50px 20.5%;
+  font-size: 4em;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: thick solid white;
+  display: flex;
+  justify-content: center;
+}
+
+.address_div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.map_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.address_detail{
+  font-size: 1.9em;
+  color: white;
+  /* margin: 0 5%; */
+  width: 49%;
+  margin: 50px 0 0 0;
+}
+
+.map_title{
+  margin: 0 0 50px 0;
+  color: white;
+  font-size: 3em;
+  width: 40%;
+  text-align: center;
+  border-bottom: 3px solid white;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  /* position: absolute; */
+}
+
+.div_map{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 49%;
+}
+
+#map{
+  width: 100%;
+  height: 400px;
+  margin-bottom: 50px;
+  border: thick solid #46719b;
+  /* position: relative; */
+}
+
+.opacity_address{
+  background-color: rgba(49, 141, 210, 0.9);
+  width: 100%;
+  height: 100%;
+}

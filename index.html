@@ -111,18 +111,26 @@
       </div>
     </section>
                         <!-- map -->
-    <section id="Mapa" class="address">
-      <h2 class="address_title">Mapa</h2>
-      <article class="art_address">
-        <p class="address_detail">AMD Automatización y Diseños Industriales S de RL de CV Julián Carrillo
-          4015 Cd. Juárez, Chihuahua, MEX. 32330 info@amdautomatizacion.com,
-          (656)-654-0056</p>
-      </article>
-      <article class="map_info">
-        <h3 class="map_title">Ciudad Juárez</h3>
-        <div class="map">
+    <section id="Mapa" class="background_img address">
+      <div class="opacity opacity_address">
+        <div class="container">
+          <h2 class="address_title">Mapa</h2>
+          <div class="address_div">
+            <article class="art_address">
+            </article>
+            <div class="map_info">
+              <p class="address_detail">AMD Automatización y Diseños Industriales S de RL de CV Julián Carrillo
+                4015 Cd. Juárez, Chihuahua, MEX. 32330 info@amdautomatizacion.com,
+                (656)-654-0056</p>
+              <div class="div_map">
+                <h3 class="map_title">Ciudad Juárez</h3>
+                <div id="map">
+              </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </article>
+      </div>
     </section>
                         <!-- contact -->
     <section id="Contacto" class="contacto">
@@ -143,5 +151,21 @@
         <p>Design by <a href="https://eljuanii00.github.io/Personal_Portfolio">Juan Ponce</a></p>
       </div>
     </section>
+    <script>
+      function initMap() {
+        var location = {lat: 31.733415, lng: -106.449233};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center: location,
+          zoom: 19
+        });
+        var marker = new google.maps.Marker({
+          map: map,
+          position: location,
+          title: 'AMD AUTOMATIZACION'
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCOuAUZLacWG71Q6x873FHKgD0TRQhn-0U&callback=initMap"
+        async defer></script>
   </body>
 </html>
