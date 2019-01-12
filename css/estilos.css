@@ -68,6 +68,14 @@ h1, h2, h3 , h4, h5, h6{
   flex-direction: column;
 }
 
+.footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
                     /* header background */
 .header_background_img{
   background-image: url(../images/img_amd_6.jpg);
@@ -268,7 +276,7 @@ h1, h2, h3 , h4, h5, h6{
   width: 50%;
   height: 100%;
   position: absolute;
-  background-color: rgba(208, 220, 225, 0.5);
+  background-color: rgba(243, 251, 255, 0.85);
 }
 
 .art_profecional_services{
@@ -504,4 +512,30 @@ h1, h2, h3 , h4, h5, h6{
 .contact_form_name, .contact_form_email, .contact_form_text{
   background-color: transparent;
   color: white;
+}
+
+.footer{
+  background-color: #318DD2;
+}
+
+.company_name, .special_thanks{
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.company_name img{
+  vertical-align: middle;
+  width: 100px;
+  height: auto;
+  background-color: #daedfc;
+  border-radius: 10px;
+  /* border: 2px solid white; */
+  margin: 0 0 0 20px;
+}
+
+.special_thanks a{
+  color: #2E4750 !important;
+  text-decoration: none;
 }
