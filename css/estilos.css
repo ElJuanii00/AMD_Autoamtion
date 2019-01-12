@@ -60,6 +60,14 @@ h1, h2, h3 , h4, h5, h6{
   flex-direction: row;
 }
 
+.contacto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
                     /* header background */
 .header_background_img{
   background-image: url(../images/img_amd_6.jpg);
@@ -190,7 +198,7 @@ h1, h2, h3 , h4, h5, h6{
 
 /* #205A86 */
 
-.opacity{
+.opacity_mision_and_mision{
   background-color: rgba(49, 141, 210, 0.9);
 }
 
@@ -427,4 +435,73 @@ h1, h2, h3 , h4, h5, h6{
   background-color: rgba(49, 141, 210, 0.9);
   width: 100%;
   height: 100%;
+}
+
+                    /* contacto */
+
+.contacto{
+  background-image: url(../images/img_amd_1.jpg);
+}
+
+.contacto_title{
+  font-size: 4em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 50px 0;
+  color: white;
+  border-bottom: thick solid #318DD2;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+.contacto_form{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contact_form_name, .contact_form_email{
+  width: 45%;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #D5D5D5;
+  padding-bottom: 70px;
+}
+
+.contact_form_text{
+  width: 50%;
+  margin: 50px 30% 0;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-bottom: 1px solid #D5D5D5;
+  text-align: justify;
+  padding-bottom: 70px;
+  color: white;
+}
+
+.contact_form_send{
+  margin: 50px auto;
+  width: 100px;
+  height: 40px;
+  background-color: transparent;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid #318DD2;
+}
+
+.opacity_contacto{
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+}
+
+.contact_form_name, .contact_form_email, .contact_form_text{
+  background-color: transparent;
+  color: white;
 }
