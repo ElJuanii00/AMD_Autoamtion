@@ -8,6 +8,46 @@ h1, h2, h3 , h4, h5, h6{
   font-family: "Fjilla One", sans-serif;
   font-weight: normal;
 }
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?6vbc8l');
+  src:  url('../fonts/icomoon.eot?6vbc8l#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?6vbc8l') format('truetype'),
+    url('../fonts/icomoon.woff?6vbc8l') format('woff'),
+    url('../fonts/icomoon.svg?6vbc8l#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-images:before {
+  content: "\e90e";
+}
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-mail4:before {
+  content: "\ea86";
+}
+.icon-youtube2:before {
+  content: "\ea9e";
+}
+
                     /* Flex */
 .header, .nav_list, .mision_and_vision{
   display: flex;
@@ -181,15 +221,30 @@ h1, h2, h3 , h4, h5, h6{
 }
 
 .hero_gallery_div h2{
-  color: #0F70B7;
+  color: #AEAEAE;
   text-align: center;
   display: flex;
   justify-content: center;
   font-size: 3em;
   margin: 0 auto;
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   border-bottom: 1px solid white;
   width: 100px;
+}
+
+.hero_gallery_div a{
+  margin: 0 auto 50px;
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border: 2px solid #318DD2;
+  border-radius: 10px;
+}
+
+.hero_gallery_div a i{
+  vertical-align: middle;
 }
 
 .hero_fig{
@@ -609,6 +664,8 @@ h1, h2, h3 , h4, h5, h6{
   background-color: transparent;
   color: white;
 }
+
+                    /* footer */
 
 .footer{
   background-color: #318DD2;
