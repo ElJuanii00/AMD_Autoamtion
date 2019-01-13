@@ -226,7 +226,7 @@ h1, h2, h3 , h4, h5, h6{
 }
 
 .hero_gallery_div h2{
-  color: #AEAEAE;
+  color: #29B0D1;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -244,7 +244,7 @@ h1, h2, h3 , h4, h5, h6{
   color: white;
   text-decoration: none;
   padding: 10px;
-  border: 2px solid #318DD2;
+  border: 2px solid #4FBED9;
   border-radius: 10px;
 }
 
@@ -687,7 +687,7 @@ h1, h2, h3 , h4, h5, h6{
   vertical-align: middle;
   width: 100px;
   height: auto;
-  background-color: #daedfc;
+  background-color: white;
   border-radius: 10px;
   /* border: 2px solid white; */
   margin: 0 0 0 20px;
