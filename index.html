@@ -2,12 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/index_RD.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <title>AMD Automation</title>
     <meta name="viewport" content="width=device-width initial-scale=1">
   </head>
   <body>
+    <i class="icon-equalizer burger_buttom" id="burger-menu"></i>
     <div class="header_background_img">
       <div class="header_background_opacity">
                           <!-- header -->
@@ -19,19 +21,19 @@
             <nav class="nav">
               <ol class="nav_list">
                 <li>
-                  <a href="#Mision_y_Vision">Misión y Visión</a>
+                  <a class="link" href="#Mision_y_Vision">Misión y Visión</a>
                 </li>
                 <li>
-                  <a href="#Servicios_Profecionales">Servicios Profecionales</a>
+                  <a class="link" href="#Servicios_Profecionales">Servicios Profecionales</a>
                 </li>
                 <li>
-                  <a href="#Capacidad">Capacidad</a>
+                  <a class="link" href="#Capacidad">Capacidad</a>
                 </li>
                 <li>
-                  <a href="#Mapa">Mapa</a>
+                  <a class="link" href="#Mapa">Mapa</a>
                 </li>
                 <li>
-                  <a href="#Contacto">Contacto</a>
+                  <a class="link" href="#Contacto">Contacto</a>
                 </li>
               </ol>
             </nav>
@@ -128,8 +130,6 @@
         <div class="container">
           <h2 class="address_title">Mapa</h2>
           <div class="address_div">
-            <article class="art_address">
-            </article>
             <div class="map_info">
               <p class="address_detail">AMD Automatización y Diseños Industriales S de RL de CV Julián Carrillo
                 4015 Cd. Juárez, Chihuahua, MEX. 32330 info@amdautomatizacion.com,
@@ -169,6 +169,37 @@
         </div>
       </div>
     </section>
+    <script>
+      // console.log("Hola mundo! mi primera linea en JS")
+      const ipad = window.matchMedia('screen and (max-width: 768px)');
+      const menu = document.querySelector('.nav');
+      // console.log(menu);
+      const burgerButton =  document.querySelector('#burger-menu');
+      // console.log(burgerButton);
+      const links = document.querySelectorAll('.link');
+
+      ipad.addListener(validation)
+      function validation(event){
+        if(event.matches){
+          burgerButton.addEventListener('click', hideShow )
+          Array.from(links).forEach( link=> {
+          link.addEventListener('click',hideShow)
+        })
+        } else {
+          burgerButton.removeEventListener('click', hideShow )
+        }
+        console.log(event.matches);
+      }
+
+      validation(ipad);
+      function hideShow(){
+        if (menu.classList.contains("is-active")){
+            menu.classList.remove('is-active');
+        }else {
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
     <script>
       function initMap() {
         var location = {lat: 31.733415, lng: -106.449233};

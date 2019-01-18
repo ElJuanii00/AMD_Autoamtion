@@ -1,0 +1,179 @@
+@media screen and (min-width: 1024px){
+  .burger_buttom{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .mision, .vision{
+    /* justify-content: space-around; */
+  }
+
+  .mision_msg, .vision_msg{
+    font-size: 2em;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .burger_buttom{
+    display: none;
+  }
+
+  .mision_msg, .vision_msg{
+    font-size: 1.5em;
+  }
+
+  .profecional_services_title, .capacity_title{
+    font-size: 3em;
+  }
+
+  .art_profecional_services, .art_capacity{
+    justify-content: space-around;
+  }
+
+  .profecional_services_list li, .capacity_list li{
+    font-size: 1.6em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .burger_buttom{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(27, 33, 39, .8);
+    color: white;
+    display: block;
+    line-height: 80px;
+    text-align: center;
+    font-size: 3em;
+    right: 15px;
+    top: 15px;
+    position: fixed;
+    z-index: 4;
+  }
+
+  .header{
+    position: static;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    padding: 10px 0 0;
+  }
+
+  .div_amd_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 130px;
+  }
+
+  .amd_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 130px;
+  }
+
+  .nav{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    right: -100vw;
+    transition: .3s;
+    z-index: 3;
+  }
+
+  .nav.is-active{
+    right: 0;
+  }
+
+  .nav_list{
+    /* position: sticky; */
+    /* top: 0px; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0;
+    width: 100%;
+    height: 50vh;
+    padding: 10px 0;
+  }
+
+  .nav_list li a{
+    font-size: 2em;
+  }
+
+  .mision_title, .vision_title{
+    font-size: 3.5em;
+  }
+
+
+  .mision_msg, .vision_msg{
+    font-size: 1.5em;
+  }
+
+  .profecional_services_title, .capacity_title{
+    font-size: 2.25em;
+  }
+
+  .art_profecional_services, .art_capacity{
+    justify-content: space-around;
+  }
+
+  .profecional_services_list li, .capacity_list li{
+    font-size: 1.35em;
+  }
+
+  .address{
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .address_title{
+    margin: 50px 0;
+    font-size: 3.5em;
+  }
+
+  .map_info{
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .div_map{
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  .map_title{
+    margin: 0;
+    font-size: 2.5em;
+    width: 20%;
+  }
+
+  .address_detail{
+    width: 85%;
+    font-size: 1.5em;
+    margin: 50px 0;
+  }
+
+  .background_img{
+    background-size: auto 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
