@@ -20,6 +20,10 @@
     display: none;
   }
 
+  .nav_list li a{
+    font-size: 1em;
+  }
+
   .mision_msg, .vision_msg{
     font-size: 1.5em;
   }
@@ -34,6 +38,10 @@
 
   .profecional_services_list li, .capacity_list li{
     font-size: 1.6em;
+  }
+
+  .background_img{
+    background-size: auto 100%;
   }
 }
 
@@ -111,6 +119,10 @@
   .nav_list li a{
     font-size: 2em;
     margin: 0 auto;
+  }
+
+  .hero_msg{
+    margin: 50px 0 0;
   }
 
   .mision_title, .vision_title{
