@@ -2,16 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../css/galería.css">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="stylesheet" href="../css/index_RD.css">
+    <link rel="stylesheet" href="../css/galeria_RD.css">
     <link rel="stylesheet" href="../css/lightbox.min.css">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro" rel="stylesheet">
     <script type="text/javascript" src="../js/lightbox-plus-jquery.min.js">
     </script>
     <title>Galería</title>
   </head>
   <body>
+    <i class="icon-equalizer burger_buttom" id="burger-menu"></i>
     <!-- <img class="background_img" src="../images/img_amd_9.jpg" alt=""> -->
-    <div class="background_img">
+    <div class="gallery_background_img">
       <section class="gallery">
         <header class="header">
           <div class="container">
@@ -104,5 +108,36 @@
         </div>
       </section>
     </div>
+    <script>
+      // console.log("Hola mundo! mi primera linea en JS")
+      const ipad = window.matchMedia('screen and (max-width: 768px)');
+      const menu = document.querySelector('.nav');
+      // console.log(menu);
+      const burgerButton =  document.querySelector('#burger-menu');
+      // console.log(burgerButton);
+      const links = document.querySelectorAll('.link');
+
+      ipad.addListener(validation)
+      function validation(event){
+        if(event.matches){
+          burgerButton.addEventListener('click', hideShow )
+          Array.from(links).forEach( link=> {
+          link.addEventListener('click',hideShow)
+        })
+        } else {
+          burgerButton.removeEventListener('click', hideShow )
+        }
+        console.log(event.matches);
+      }
+
+      validation(ipad);
+      function hideShow(){
+        if (menu.classList.contains("is-active")){
+            menu.classList.remove('is-active');
+        }else {
+          menu.classList.add('is-active');
+        }
+      }
+    </script>
   </body>
 </html>
