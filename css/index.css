@@ -255,7 +255,7 @@ h1, h2, h3 , h4, h5, h6{
 
 .hero_fig{
   width: 1000%;
-  height: 655px;
+  height: 100%;
   margin: 0;
   left: 0;
   position: relative;
@@ -363,7 +363,7 @@ h1, h2, h3 , h4, h5, h6{
 
 /* #205A86 */
 
-.opacity_mision_and_mision{
+.opacity_mision_and_vision{
   background-color: rgba(49, 141, 210, 0.9);
 }
 

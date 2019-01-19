@@ -110,6 +110,7 @@
 
   .nav_list li a{
     font-size: 2em;
+    margin: 0 auto;
   }
 
   .mision_title, .vision_title{
@@ -171,9 +172,214 @@
 }
 
 @media screen and (max-width: 420px) {
+  .header{
+    padding: 0px;
+  }
+
+  .hero_msg{
+    margin: 0 0 25px;
+    font-size: 1.9em;
+  }
+
+  .hero_gallery_div h2{
+    font-size: 1.9em;
+    width: 50px;
+  }
+
+  .hero_gallery_div a{
+    margin: 0 auto 25px;
+    font-size: 1em;
+  }
+
+  .opacity_mision_and_vision{
+    padding: 0 0 25px;
+  }
+
+  .mision, .vision{
+    width: 100%;
+    height: auto;
+    margin: 25px 0 0;
+  }
+
+  .mision_title, .vision_title{
+    font-size: 1.9em;
+  }
+
+  .mision_msg, .vision_msg{
+    font-size: 1.4em;
+  }
+
+  .profecional_services{
+    height: 100%;
+    position: relative;
+    border-bottom: .5px solid #71B8CA;
+  }
+
+  .capacity{
+    height: 100%;
+    position: relative;
+    border-top: .5px solid #71B8CA;
+  }
+
+  .art_profecional_services, .art_capacity{
+    flex-direction: column;
+    justify-content: flex-start;
+    position: initial;
+    width: 100%;
+    z-index: 1;
+    margin: 25px 0;
+    height: auto;
+  }
+
+  .profecional_services_img, .capacity_img{
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .profecional_services_title, .capacity_title{
+    font-size: 2em;
+    margin: 25px 0;
+  }
+
+  .profecional_services_list, .capacity_list{
+    margin: 0 0 25px;
+  }
+
+  .profecional_services_list li, .capacity_list li{
+    font-size: 1em;
+  }
+
+  .address_title{
+    font-size: 1.9em;
+    margin: 25px 0;
+    width: 15%;
+  }
+
+  #map{
+    margin: 0px;
+  }
+
+  .map_title{
+    font-size: 2em;
+    margin: 25px 0;
+  }
+
+  .address_detail{
+    margin: 0 0 25px;
+    font-size: 1.5em;
+  }
+
+  .contacto_title{
+    font-size: 3em;
+  }
+
+  .contact_form_name, .contact_form_email{
+    width: 100%;
+    padding-bottom: 30px;
+    margin-top: 10px;
+  }
+
+  .contact_form_text{
+    width: 100%;
+    padding-bottom: 70px;
+    margin: 10px 0 0 0;
+  }
+
+  .footer{
+    flex-direction: column;
+  }
+
+  .company_name p{
+    text-align: center;
+  }
+
+  .company_name img{
+    margin: .5em 0 0;
+  }
+
+  .special_thanks p{
+    margin: 0 0 1em;
+  }
 
 }
 
 @media screen and (max-width: 320px) {
+  .burger_buttom{
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    font-size: 2em;
+  }
 
+  .div_amd_logo{
+    margin: -20px auto;
+  }
+
+  .nav_list li a{
+    font-size: 1.5em;
+  }
+
+  .hero_msg{
+    font-size: 1em;
+    margin: 0 0 15px;
+  }
+
+  .hero_gallery_div{
+    margin-bottom: 15px;
+  }
+
+  .hero_gallery_div h2{
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .hero_gallery_div a {
+    margin: 0 auto 15px;
+  }
+
+  .mision_title, .vision_title{
+    font-size: 1em;
+  }
+
+  .mision_msg, .vision_msg{
+    font-size: 1em;
+  }
+
+  .profecional_services_title, .capacity_title{
+    font-size: 1em;
+    white-space: nowrap;
+    border-bottom: 2px solid #0F3658;
+  }
+
+  .profecional_services_list li, .capacity_list li{
+    font-size: 0.9em;
+  }
+
+  .address_title{
+    font-size: 1em;
+    border-bottom: 2px solid white
+  }
+
+  .map_title{
+    font-size: 1em;
+    border-bottom: 2px solid white
+  }
+
+  .address_detail{
+    font-size: 1em;
+  }
+
+  #map{
+    height: 250px;
+  }
+
+  .contacto_title{
+    font-size: 1em;
+    border-bottom: 2px solid #318DD2
+  }
+
+  .company_name p, .special_thanks p{
+    font-size: 0.8em;
+  }
 }
