@@ -118,7 +118,7 @@ h1, h2, h3 , h4, h5, h6{
 
                     /* header background */
 .header_background_img{
-  background-image: url(../images/img_amd_6.jpg);
+  background-image: url(../images/img_amd_6.png);
   /* background-color: rgba(0, 0, 0, 0.2); */
   display: inline-block;
   background-size: auto 100%;
@@ -213,7 +213,7 @@ h1, h2, h3 , h4, h5, h6{
   color: white;
   width: 100%;
   font-size: 3.5em;
-  margin: 110px 50px 0;
+  margin: 120px 50px 0;
   text-align: center;
   text-transform: uppercase;
 }
@@ -364,7 +364,7 @@ h1, h2, h3 , h4, h5, h6{
 
                     /* mision and vision */
 .mision_and_vision{
-  background-image: url(../images/img_amd_1.jpg);
+  background-image: url(../images/img_amd_1.png);
 }
 
 /* #205A86 */
@@ -488,7 +488,7 @@ h1, h2, h3 , h4, h5, h6{
 }
 
 .profecional_services_img{
-  background-image: url(../images/img_amd_8.jpg);
+  background-image: url(../images/img_amd_8.png);
   background-size: auto 100%;
   /* background-position-y: 50px; */
   background-position-x: -200px;
@@ -531,7 +531,7 @@ h1, h2, h3 , h4, h5, h6{
                     /* Map */
 
 .address{
-  background-image: url(../images/img_amd_9.jpg);
+  background-image: url(../images/img_amd_9.png);
 }
 
 .address_title{
@@ -611,7 +611,7 @@ h1, h2, h3 , h4, h5, h6{
                     /* contacto */
 
 .contacto{
-  background-image: url(../images/img_amd_1.jpg);
+  background-image: url(../images/img_amd_1.png);
 }
 
 .contacto_title{
@@ -696,6 +696,7 @@ h1, h2, h3 , h4, h5, h6{
   height: auto;
   background-color: white;
   border-radius: 10px;
+  padding: 10px;
   /* border: 2px solid white; */
   margin: 0 0 0 20px;
 }
