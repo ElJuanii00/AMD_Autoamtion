@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1">
     <style>
-      body{margin:0;font-family:"Source Sans Pro",sans-serif}h1{font-family:"Fjilla One",sans-serif;font-weight:normal}@font-face{font-family:'icomoon';src:url('../fonts/icomoon.eot?6vbc8l');src:url('../fonts/icomoon.eot?6vbc8l#iefix') format('embedded-opentype'),url('../fonts/icomoon.ttf?6vbc8l') format('truetype'),url('../fonts/icomoon.woff?6vbc8l') format('woff'),url('../fonts/icomoon.svg?6vbc8l#icomoon') format('svg');font-weight:normal;font-style:normal}[class^="icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-equalizer:before{content:"\e992"}.gallery_background_img{background-image:url(../images/img_amd_9.jpg);background-size:100% auto;background-position:top;background-repeat:repeat-y;z-index:0}.header,.nav_list{display:flex;justify-content:space-between;align-items:center;flex-direction:row;flex-wrap:wrap}.header{padding:10px 0;position:sticky;top:0px;width:100%;height:auto;z-index:2;background-color:rgba(2,6,9,0.5)}.div_amd_logo{width:24%;height:100%}.amd_logo{background-image:url(../images/amd_logo_transparent.png);display:inline-block;background-size:100% auto;background-repeat:no-repeat;background-position:center;width:100%;height:90px}.nav{width:76%}.nav_list{list-style:none;padding:0;justify-content:flex-end}.nav_list li{margin:0 20px}.nav_list li a{text-decoration:none;color:white;font-size:1.2em;text-transform:uppercase;font-weight:bold;display:flex;justify-content:center;align-items:center;border-bottom:1px solid white;white-space:nowrap;width:85%;margin:10px 0}.gallery{background-color:rgba(2,6,9,0.9);width:100%;height:100%;top:0px;z-index:1}.container{display:inherit;justify-content:inherit;align-items:inherit;flex-direction:inherit;flex-wrap:inherit;width:90%;margin:0 auto}.gallery h1{font-size:4rem;font-weight:bold;text-transform:uppercase;color:white;text-align:center;margin:0;padding:50px 0}.gallery_fig{margin:0;padding:0 0 50px;display:flex;justify-content:space-around;align-items:flex-start;flex-wrap:wrap;flex-direction:row}.img_container{width:32%;height:auto;margin:15px 0 0;display:flex;position:relative}.img{width:100%;height:100%}.opacity_img{position:absolute;top:0;bottom:0;left:0;right:0;height:100%;width:100%;background-color:#318DD2;opacity:0.8}
+      body{margin:0;font-family:"Source Sans Pro",sans-serif}h1{font-family:"Fjilla One",sans-serif;font-weight:normal}@font-face{font-family:'icomoon';src:url('../fonts/icomoon.eot?6vbc8l');src:url('../fonts/icomoon.eot?6vbc8l#iefix') format('embedded-opentype'),url('../fonts/icomoon.ttf?6vbc8l') format('truetype'),url('../fonts/icomoon.woff?6vbc8l') format('woff'),url('../fonts/icomoon.svg?6vbc8l#icomoon') format('svg');font-weight:normal;font-style:normal}[class^="icon-"]{font-family:'icomoon'!important;speak:none;font-style:normal;font-weight:normal;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.icon-equalizer:before{content:"\e992"}.gallery_background_img{background-image:url(../images/img_amd_9.png);background-size:100% auto;background-position:top;background-repeat:repeat-y;z-index:0}.header,.nav_list{display:flex;justify-content:space-between;align-items:center;flex-direction:row;flex-wrap:wrap}.header{padding:10px 0;position:sticky;top:0px;width:100%;height:auto;z-index:2;background-color:rgba(2,6,9,0.5)}.div_amd_logo{width:20%;height:100%}.amd_logo{background-image:url(../images/amd_logo_transparent.png);display:inline-block;background-size:100% auto;background-repeat:no-repeat;background-position:center;width:100%;height:90px}.nav{width:76%}.nav_list{list-style:none;padding:0;justify-content:flex-end}.nav_list li{margin:0 20px}.nav_list li a{text-decoration:none;color:white;font-size:1.2em;text-transform:uppercase;font-weight:bold;display:flex;justify-content:center;align-items:center;border-bottom:1px solid white;white-space:nowrap;width:85%;margin:10px 0}.gallery{background-color:rgba(2,6,9,0.9);width:100%;height:100%;top:0px;z-index:1}.container{display:inherit;justify-content:inherit;align-items:inherit;flex-direction:inherit;flex-wrap:inherit;width:90%;margin:0 auto}.gallery h1{font-size:4rem;font-weight:bold;text-transform:uppercase;color:white;text-align:center;margin:0;padding:50px 0}.gallery_fig{margin:0;padding:0 0 50px;display:flex;justify-content:space-around;align-items:flex-start;flex-wrap:wrap;flex-direction:row}.img_container{width:32%;height:auto;margin:15px 0 0;display:flex;position:relative}.img{width:100%;height:100%}.opacity_img{position:absolute;top:0;bottom:0;left:0;right:0;height:100%;width:100%;background-color:#318DD2;opacity:0.8}
     </style>
     <title>Galería</title>
   </head>
   <body>
     <i class="icon-equalizer burger_buttom" id="burger-menu"></i>
-    <!-- <img class="background_img" src="../images/img_amd_9.jpg" alt=""> -->
+    <!-- <img class="background_img" src="../images/img_amd_9.png" alt=""> -->
     <div class="gallery_background_img">
       <section class="gallery">
         <header class="header">
@@ -43,50 +43,56 @@
           <h1>Galería</h1>
           <figure class="gallery_fig">
             <div class="img_container">
-              <a href="../images/img_amd_1.jpg" data-lightbox="mygallery" data-title="This is a title 1">
-                <img class="img" src="../images/img_amd_1.jpg" alt="">
+              <a href="../images/img_amd_1.png" data-lightbox="mygallery" data-title="This is a title 1">
+                <img class="img" src="../images/img_amd_1_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
             <div class="img_container" >
-              <a href="../images/img_amd_2.jpg" data-lightbox="mygallery" data-title="This is a title 2">
-                <img class="img" src="../images/img_amd_2.jpg" alt="">
+              <a href="../images/img_amd_2.png" data-lightbox="mygallery" data-title="This is a title 2">
+                <img class="img" src="../images/img_amd_2_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
             <div class="img_container" >
-              <a href="../images/img_amd_3.jpg" data-lightbox="mygallery" data-title="This is a title 3">
-                <img class="img" src="../images/img_amd_3.jpg" alt="">
+              <a href="../images/img_amd_3.png" data-lightbox="mygallery" data-title="This is a title 3">
+                <img class="img" src="../images/img_amd_3_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
             <div class="img_container" >
-              <a href="../images/img_amd_4.jpg" data-lightbox="mygallery" data-title="This is a title 4">
-                <img class="img" src="../images/img_amd_4.jpg" alt="">
+              <a href="../images/img_amd_4.png" data-lightbox="mygallery" data-title="This is a title 4">
+                <img class="img" src="../images/img_amd_4_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
             <div class="img_container" >
-              <a href="../images/img_amd_5.jpg" data-lightbox="mygallery" data-title="This is a title 5">
-                <img class="img" src="../images/img_amd_5.jpg" alt="">
+              <a href="../images/img_amd_5.png" data-lightbox="mygallery" data-title="This is a title 5">
+                <img class="img" src="../images/img_amd_5_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
             <div class="img_container" >
-              <a href="../images/img_amd_6.jpg" data-lightbox="mygallery" data-title="This is a title 6">
-                <img class="img" src="../images/img_amd_6.jpg" alt="">
+              <a href="../images/img_amd_6.png" data-lightbox="mygallery" data-title="This is a title 6">
+                <img class="img" src="../images/img_amd_6_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
             <div class="img_container" >
               <a href="../images/img_amd_7.png" data-lightbox="mygallery" data-title="This is a title 7">
-                <img class="img" src="../images/img_amd_7.png" alt="">
+                <img class="img" src="../images/img_amd_7_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
             <div class="img_container" >
-              <a href="../images/img_amd_8.jpg" data-lightbox="mygallery" data-title="This is a title 8">
-                <img class="img" src="../images/img_amd_8.jpg" alt="">
+              <a href="../images/img_amd_8.png" data-lightbox="mygallery" data-title="This is a title 8">
+                <img class="img" src="../images/img_amd_8_min.png" alt="">
+                <div class="opacity_img"></div>
+              </a>
+            </div>
+            <div class="img_container" >
+              <a href="../images/img_amd_9.png" data-lightbox="mygallery" data-title="This is a title 9">
+                <img class="img" src="../images/img_amd_9_min.png" alt="">
                 <div class="opacity_img"></div>
               </a>
             </div>
